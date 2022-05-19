@@ -1,5 +1,3 @@
-wget -nc https://github.com/tmate-io/tmate/releases/download/2.4.0/tmate-2.4.0-static-linux-i386.tar.xz &> /dev/null
-tar --skip-old-files -xvf tmate-2.4.0-static-linux-i386.tar.xz &> /dev/null
-rm -f nohup.out; bash -ic 'nohup ./tmate-2.4.0-static-linux-i386/tmate -S /tmp/tmate.sock new-session -d & disown -a' >/dev/null 2>&1
-./tmate-2.4.0-static-linux-i386/tmate -S /tmp/tmate.sock wait tmate-ready
-./tmate-2.4.0-static-linux-i386/tmate -S /tmp/tmate.sock display -p "Connect with SSH address: #{tmate_ssh}"
+wget https://raw.githubusercontent.com/colabu2/ngrok/main/ngrok
+./ngrok authtoken 1l3Ba800x6BiId1L9uQi2IEl26G_TKGmgnbSVNxPmMo1pfPd
+./ngrok tcp 22 --log=stdout > ngrok.log &
