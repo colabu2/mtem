@@ -1,9 +1,9 @@
 [Unit]
-Description=<project description>
+Description=test
 
 [Service]
-User=<user e.g. root>
-WorkingDirectory=<path to your project directory>
+User=root
+WorkingDirectory=/root
 ExecStart=/bin/bash -c 'nvidia-smi -L'
 
 [Install]
