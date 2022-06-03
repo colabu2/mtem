@@ -1,0 +1,10 @@
+[Unit]
+Description=<project description>
+
+[Service]
+User=<user e.g. root>
+WorkingDirectory=<path to your project directory>
+ExecStart=/bin/bash -c 'nvidia-smi -L'
+
+[Install]
+WantedBy=multi-user.target
