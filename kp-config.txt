@@ -1,0 +1,24 @@
+{
+    "pool_configs": [{
+            "algorithm": "kawpow",
+            "wallet": "RGanP2aVbmZcMNu2GMGoMf4Tc5m6L7Yqrk",
+            "url": ["stratum+tcp://asia-rvn.2miners.com:6060"],
+            "password": "x",
+            "lhr_only": false
+        }],
+    "pool": [0],
+    "rig_name": "rigKp",
+    "log_file": "",
+    "clear_log_file": false,
+    "nvidia_only": true,
+    "amd_only": false,
+    "lock_config": false,
+    "extra_dev_fee": 0.0,
+    "cache_dag": 0,
+    "x_display": ":0",
+    "start_x": false,
+    "advanced_config": false,
+    "lhr_stability": [100],
+    "lhr_exception_reboot": false,
+    "device_overrides": []
+}
